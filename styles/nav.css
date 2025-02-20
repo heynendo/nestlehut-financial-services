@@ -1,0 +1,172 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    transition: 0.3s;
+
+    font-family: 'Markazi Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.25s;
+}
+nav .logo{
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+nav .hamburger {
+    height: 30px;
+    width: 30px;
+    transition: 0.75s;
+    padding: 10px;
+}
+nav .hamburger:hover{
+    cursor: pointer;
+}
+nav .sm{
+    margin: 25px;
+    margin-left: 0;
+    margin-right: 0;
+}
+nav .sm div{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+nav .sm div a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    padding-left: 10px;
+}
+nav .display-hide a{
+    display:none;
+}
+nav .display-show{
+    margin-bottom: 0;
+}
+nav .display-show div{
+    background: #D9D9D9;
+    border-radius: 3px;
+    margin: 5px;
+}
+nav .display-show div .hamburger{
+    transform: rotate(270deg);
+}
+nav .display-show > a{
+    display: block;
+    text-decoration: none;
+    color: #474849;
+    background: #D9D9D9;
+    border-radius: 3px;
+    margin: 5px;
+    width: 200px;
+    padding: 10px;
+    transition: 0.25s;
+}
+nav .display-show > a:hover{
+    color: black;
+    background: #c2c2c2;
+    transition: 0.25s;
+}
+nav .lg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .lg li{
+    margin: 10px;
+}
+nav .lg li a{
+    text-decoration: none;
+    color: #474849;
+}
+nav .lg li{
+    margin: 20px;
+    transition: 0.1s;
+    color: #474849;
+}
+nav .lg li:hover{
+    cursor: pointer;
+    border-bottom: solid #8C3434;
+    padding-bottom: 10px;
+    color: black;
+}
+nav a{
+    text-decoration: none;
+    color: #474849;
+}
+.scroll-down{
+    background-color: #474849;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+.scroll-down .logo{
+    height: 75px;
+    width: 75px;
+}
+.scroll-down .sm{
+    margin: 12.5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.scroll-down .display-show{
+    margin-bottom: 0;
+}
+.scroll-down .lg li a{
+    color: white;
+}
+.scroll-down .display-hide div a{
+    color: white;
+}
+.scroll-down .display-show div a{
+    color: black;
+}
+.header-grow{
+    height: 275px;
+}
+@media (min-width: 850px){
+    nav .sm{
+        display: none;
+    }
+}
+@media (max-width: 850px){
+    nav .lg{
+        display: none;
+    }
+    nav {
+        align-items: start;
+    }
+    nav .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .header-grow{
+        height: 225px;
+    }
+}
+@media (max-width: 500px){
+    nav .display-show > a{
+        width: 175px;
+    }
+    nav .logo{
+        height: 100px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,168 @@
+main .container {
+    justify-content: center;
+}
+main .container .services {
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    justify-self: center;
+}
+main .container .services .title-divider{
+    width: 50%;
+}
+main .container .services .service-options {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+}
+main .container .services .service-options .card {
+    display: block;
+    justify-content: center;
+    justify-self: center;
+}
+main .container .services .service-options .card .circle {
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    transition: 0.25s;
+    width: 150px;
+    height: 150px;
+    background: rgba(122, 255, 151, 0.5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    margin: 5px auto;
+}
+main .container .services .service-options .card .circle img{
+    display: block;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    width: 75%;
+}
+main .container .services .service-options .card .y{background: rgba(255, 248, 34, 0.5);}
+main .container .services .service-options .card .g{background: rgba(122, 255, 151, 0.5);}
+main .container .services .service-options .card h2{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+    transition: 0.25s;
+}
+main .container .services .body-divider{
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    background: #9A9A9A;
+    margin-top: 10px;
+}
+main .container .services p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 10px;
+}
+main .container p{
+    padding-top: 30px;
+}
+main .container .award-info {
+    background-color: #D9D9D9;
+    border-radius: 3px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    justify-self: center;
+    margin: auto;
+}
+main .container .award-info ol li{
+        justify-self: center;
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        width: 95%;
+        padding: 5px;
+}
+main .container .award-info div{
+    display: flex;
+    justify-content: space-around;
+}
+main .container .award-info div img{
+    display: block;
+    justify-self: center;
+    margin: auto;
+    height: 100px;
+    margin: 30px;
+}
+@media (max-width: 850px){
+    main .container .services p{
+        font-size: .75em;
+        line-height: 1em;
+        padding: 5px;
+    }
+    main .container .award-info div img{
+        height: auto;
+        width: 75%;
+        margin: 20px;
+    }
+}
+@media (max-width: 650px){
+    main .container p{
+        padding-top: 30px;
+    }
+    main .container .services {
+        width: 90%;
+        margin-top: 50px;
+    }
+    main .container .services .title-divider{
+        width: 60%;
+    }
+    main .container .services .service-options {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        justify-content: center;
+        justify-self: center;
+        width: 100%;
+    }
+    main .container .services .service-options .card .circle {
+        width: 125px;
+        height: 125px;
+        margin: 5px auto;
+    }
+    main .container .services .service-options .card:nth-child(3) .circle{
+        background: rgba(122, 255, 151, 0.5);
+    }
+    main .container .services .service-options .card:nth-child(4) .circle{
+        background: rgba(255, 248, 34, 0.5);
+    }
+    main .container .services .service-options .card h2{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    main .container .services .service-options .card .circle img{
+        display: block;
+        justify-self: center;
+        align-self: start;
+        margin: auto;
+        margin-top: 12.5%;
+        width: 75%;
+    }
+    main .container .award-info {
+        width: 90%;
+        justify-self: center;
+        margin: auto;
+    }
+}

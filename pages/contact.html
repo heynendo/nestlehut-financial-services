@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1">
+        <meta name="description" content="Nestlehut Financial Services">
+        <title>Nestlehut Financial Services</title>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'></link>
+        <link href='https://fonts.googleapis.com/css?family=Markazi Text' rel='stylesheet'></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+    </head>
+    <body>
+        <nav id="nav">
+            <img class="logo" src="../images/logos/nestlehut-logo1.png"/>
+            <div id="toggle-dropdown" class="display-hide sm">
+                <div>
+                    <a href="contact.html">Contact</a>
+                    <img class="hamburger" onclick="dropdown()" src="../images/hamburger-icon.png"/>
+                </div>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="https://brokercheck.finra.org/" target="_blank">FINRA Brokercheck</a>
+            </div>
+            <ul class="lg">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li class="selected-page"><a href="contact.html">Contact</a></li>
+                <li><a href="https://brokercheck.finra.org/" target="_blank">FINRA Brokercheck</a></li>
+            </ul>
+        </nav>
+        <header id="header">
+            <h1>Nestlehut Financial Services Inc.</h1>
+            <h3>Frankfort, IL</h3>
+        </header>
+        <main>
+            <div class="container">
+                <section class="title">Contact Us</section>
+                <div class="section-main">
+                    <div class="contact-form">
+                        <form>
+                            <div>
+                                <label>First Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div>
+                                <label>Last Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" required>
+                            </div>
+                            <div>
+                                <label>Team Member</label>
+                                <select>
+                                    <option>Default</option>
+                                    <option>Thomas Nestlehut</option>
+                                    <option>Adam Beierle</option>
+                                    <option>Michael Kordas</option>
+                                    <option>Kyle Tripi</option>
+                                </select>
+                            </div>
+                            <div class="message">
+                                <label>Message</label>
+                                <textarea></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="contact-aside">
+                        <p>We are here to help. If you would like more information about our financial services, please do not hesitate to message or call during available hours.</p>
+                        <p>Use the form on this page to send an email to a specific team member at any time. If unsure who to contact, set as “Default” and we will find the right partner for you.</p>
+                        <div class="body-divider"></div>
+                        <section class="card-title">Business Hours</section>
+                        <div class="title-divider"></div>
+                        <section class="days">Monday - Thursday</section>
+                        <section>8:00 am to 4:30 pm</section>
+                        <section class="days">Friday</section>
+                        <section>8:00 am to 4:00 pm</section>
+                        <div class="body-divider"></div>
+                        <section class="summer">Summer Hours </section>
+                        <section class="sub-summer">(Memorial Day to Labor Day)</section>
+                        <section class="days">Monday - Thursday</section>
+                        <section>8:00 am to 4:00 pm</section>
+                        <section class="days">Friday</section>
+                        <section>8:00 am to 3:30 pm</section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+
+    <script>
+
+        function dropdown(){
+            const element = document.getElementById("toggle-dropdown");
+            if (element.classList.contains("display-show")){
+                element.classList.remove("display-show");
+                element.classList.add("display-hide");
+            } else {
+                element.classList.add("display-show");
+                element.classList.remove("display-hide");
+            }
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            const element = document.getElementById('nav');
+            const element2 = document.getElementById('header');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                element.classList.add("scroll-down");
+                element2.classList.add("header-grow");
+            } else {
+                element.classList.remove("scroll-down");
+                element2.classList.remove("header-grow");
+            }
+        }
+    </script>
+</html>

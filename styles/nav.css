@@ -13,7 +13,7 @@ nav {
     font-family: 'Markazi Text';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.6em;
     transition: 0.25s;
 }
 nav .logo{
@@ -77,7 +77,6 @@ nav .display-show > a{
 nav .display-show > a:hover{
     color: black;
     background: #c2c2c2;
-    transition: 0.25s;
 }
 nav .lg{
     display: flex;
@@ -85,15 +84,12 @@ nav .lg{
     align-items: center;
 }
 nav .lg li{
-    margin: 10px;
+    margin: 10px 20px;
+    transition: 0.1s;
+    color: #474849;
 }
 nav .lg li a{
     text-decoration: none;
-    color: #474849;
-}
-nav .lg li{
-    margin: 20px;
-    transition: 0.1s;
     color: #474849;
 }
 nav .lg li:hover{
@@ -162,6 +158,9 @@ nav a{
     }
 }
 @media (max-width: 500px){
+    nav{
+        font-size: 1.2em;
+    }
     nav .display-show > a{
         width: 175px;
     }

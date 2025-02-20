@@ -199,11 +199,15 @@ main .container .hours:last-child{
         margin-bottom: 10px;
     }    
     main .container .awards .imgs a{
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
-    main .container .awards .imgs img:hover{
-        width: 52%;
+    main .container .awards .imgs  img{
+        width: 60%;
+        margin: auto;
+    }
+    main .container .awards .imgs a img:hover{
+        width: 62%;
     }
     main .container .mission{
         display: block;

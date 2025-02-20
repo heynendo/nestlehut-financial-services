@@ -58,6 +58,7 @@ button{
 button:hover{
     cursor: pointer;
     background-color: #808080;
+    color: white;
 }
 header{
     background-color: #474849;
@@ -75,7 +76,7 @@ main{
 main .container{
     margin: auto;
     margin-top: 3%;
-    padding-bottom: 9%;
+    padding-bottom: 7.5%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 85%;

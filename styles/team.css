@@ -63,6 +63,13 @@ main .container > div .advisors .card .card-head div a{
 main .container > div .advisors .card .card-head div button{
     width: 70%;
 }
+main .container > div .advisors .card .card-head div a:nth-child(odd) button{
+    background-color: #8C3434;
+    color: white;
+}
+main .container > div .advisors .card .card-head div a:nth-child(odd) button:hover{
+    background-color: #7a2d2d;
+}
 main .container > div .advisors .card .body-divider{
     width: 100%;
     height: 1px;
